@@ -1,86 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
+        .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
         }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid #ccc; /* Add a gray border */
-            padding: 10px; /* Add some padding for space */
+        .project {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 20px;
         }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            border-left: 2px solid #000; /* Add a black border on the left */
-            border-right: 2px solid #000; /* Add a black border on the right */
-            padding: 20px; /* Add padding for space inside the border */
-            height: 100vh; /* Set height to 100% of viewport height */
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-    </style>
+        </style>
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hello! My name's Logan, and I'm a CS student with a graduation date of Spring 2026.
-            </p>
-        </section>
-
-        <section>
-            <h2>My Strengths</h2>
-            <p>
-                Here are some of the strengths I've acquired over my time studying CS:
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>OOP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </p>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
+        <nav>
             <ul>
-                <li>Battleship game in Python</li>
-                <li>2248 Game In Java</li>
-                <li>Sort Algorithm Comparison in Java</li>
-                <li>Wordle game in Python</li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
+            </nav>
+    </header>
+    <section id="about"> 
+        <div class="container">
+            <img src= "images/profile.jpg" alt="Profile Photo" width="200">
+<h1>Logan Ihle</h1>
+<p style="font-family: 'Courier New', Courier, monospace; color: brown">C.S. Student</p>
+<p>My name is Logan, and I'm a sophomore at Iowa State studying computer science with an expected graduation date of May 2026. </p>
+        </div>
+        
+    </section>
 
-        <section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+            <img src= "images/python.jpeg" alt="Project 1" width="75">
+            <h3>Project: Worlde recreation</h3>
+            <p>One project I've completed that I enjoyed was a recreation of the famous "Wordle" game, where the player 
+                has 6 attempts to guess a random 5 letter word. My logic involved making both the "answer" and user guesses as lists in Python
+                and iterated through each and compared them to give the user the yellow, green, and gray letters. </p>
+                <h3>Project: 2248 Recreation</h3>
+                <p>Another project I did was a recreation of the game "2248". It involves the user moving the cursor around to 
+                    collect points. The purpose of this game was to be taught about 2d arrays, how they work, how to implement them, etc</p>
+        
+    </section>
+
+    <section id="contact">
+        <div class="container">
             <h2>Contact Me</h2>
-            <p>
-                You can reach out to me at ihlelogan58@gmail.com
-            </p>
-        </section>
-    </main>
+            <p>You can reach me at lcihle@iastate.edu</p>
+            </div>
+    </section>
 
-    <script>
-    </script>
+    <footer>
+        <p>&copy; 2024 Logan Ihle</p>
+    </footer>
+    
 </body>
-
 </html>
